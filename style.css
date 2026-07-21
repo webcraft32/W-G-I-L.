@@ -1,0 +1,596 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Arial', sans-serif;
+}
+
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+
+    background:#002147;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+
+.logo h2{
+
+    font-size:32px;
+    color:#ff9800;
+
+}
+
+
+.logo span{
+
+    font-size:13px;
+    color:white;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+
+}
+
+
+nav ul li{
+
+    margin-left:30px;
+
+}
+
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+
+nav ul li a:hover,
+nav ul li a.active{
+
+    color:#ff9800;
+
+}
+
+
+
+
+
+/* ================= PAGE BANNER ================= */
+
+
+.page-banner{
+
+    height:350px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.6)
+    ),
+    url("../images/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+
+}
+
+
+.page-banner h1{
+
+    font-size:50px;
+
+}
+
+
+.page-banner p{
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* ================= CONTAINERS ================= */
+
+
+.container{
+
+    width:85%;
+    margin:auto;
+
+}
+
+
+
+
+
+/* ================= ABOUT PAGE ================= */
+
+
+.about-section{
+
+    padding:80px 0;
+
+}
+
+
+.about-section .container{
+
+    display:flex;
+    gap:50px;
+    align-items:center;
+
+}
+
+
+.about-image img{
+
+    width:450px;
+    border-radius:10px;
+
+}
+
+
+.about-content h2{
+
+    color:#002147;
+    font-size:35px;
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+/* ================= CARDS ================= */
+
+
+.mission-section,
+.values-container,
+.service-grid,
+.product-grid,
+.features{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+.mission-section{
+
+    padding:60px 8%;
+
+}
+
+
+
+.mission-card,
+.value,
+.service-box,
+.product-card,
+.feature-box{
+
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+.mission-card:hover,
+.value:hover,
+.service-box:hover,
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.mission-card i,
+.value i,
+.service-box i,
+.feature-box i{
+
+    font-size:40px;
+    color:#ff9800;
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* ================= PRODUCTS ================= */
+
+
+.products{
+
+    padding:70px 8%;
+
+}
+
+
+
+.product-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+
+.product-card h3{
+
+    margin:15px 0;
+    color:#002147;
+
+}
+
+
+.product-card h4{
+
+    color:#ff9800;
+    font-size:22px;
+
+}
+
+
+
+
+
+.btn{
+
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+
+    background:#ff9800;
+    color:white;
+
+    text-decoration:none;
+    border-radius:5px;
+
+}
+
+
+.btn:hover{
+
+    background:#002147;
+
+}
+
+
+
+
+
+
+/* ================= CONTACT ================= */
+
+
+.contact-section{
+
+    padding:80px 8%;
+
+}
+
+
+.contact-container{
+
+    display:grid;
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:50px;
+
+}
+
+
+
+.contact-box{
+
+    display:flex;
+    gap:20px;
+    margin:25px 0;
+
+}
+
+
+.contact-box i{
+
+    color:#ff9800;
+    font-size:30px;
+
+}
+
+
+
+.contact-form{
+
+    background:white;
+    padding:40px;
+    border-radius:10px;
+
+}
+
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+
+    border:1px solid #ddd;
+
+}
+
+
+
+.contact-form button{
+
+    width:100%;
+    padding:15px;
+
+    background:#002147;
+    color:white;
+
+    border:none;
+    cursor:pointer;
+
+}
+
+
+.contact-form button:hover{
+
+    background:#ff9800;
+
+}
+
+
+
+
+
+/* ================= STATS ================= */
+
+
+.company-stats{
+
+    background:#002147;
+    color:white;
+
+    padding:50px 8%;
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    text-align:center;
+
+}
+
+
+.company-stats h2{
+
+    color:#ff9800;
+    font-size:45px;
+
+}
+
+
+
+
+
+
+
+/* ================= CTA ================= */
+
+
+.about-cta{
+
+    text-align:center;
+    padding:70px;
+
+    background:#ff9800;
+    color:white;
+
+}
+
+
+
+.about-cta a{
+
+    display:inline-block;
+    margin-top:20px;
+
+    background:#002147;
+    color:white;
+
+    padding:15px 35px;
+
+    text-decoration:none;
+    border-radius:5px;
+
+}
+
+
+
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
+    background:#00152e;
+    color:white;
+
+    text-align:center;
+    padding:30px;
+
+}
+
+
+
+.socials a{
+
+    color:white;
+    font-size:25px;
+    margin:10px;
+
+}
+
+
+
+
+
+
+/* ================= WHATSAPP ================= */
+
+
+.whatsapp{
+
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    background:#25d366;
+    color:white;
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+
+}
+
+
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:768px){
+
+
+header{
+
+    flex-direction:column;
+
+}
+
+
+
+nav ul{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+
+nav ul li{
+
+    margin:10px;
+
+}
+
+
+
+.page-banner h1{
+
+    font-size:35px;
+
+}
+
+
+
+.about-section .container{
+
+    flex-direction:column;
+
+}
+
+
+
+.about-image img{
+
+    width:100%;
+
+}
+
+
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+
+ 
